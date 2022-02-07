@@ -1,0 +1,781 @@
+body {
+	background-color: white;
+	margin: 0px;
+	font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px; 
+}
+
+main {
+	display: block;
+	width: 1316px;
+	margin: 0px auto;
+	float: none;
+	/*background-color: white;*/
+}
+
+
+/*GLAVNI MENI*/
+#okvir {
+	display: block;
+	/*width: 1270px; */
+	/*width: 95%;*/  /*PROMENA SIRINE U % KAKO BI SE I HEADER RASIRIO!!! napomena*/
+	border: 4px solid #3F9;
+	float: none;
+	/*margin: auto;*/
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	/*top: -8px;
+	right: 5px;
+	left: 0px;*/
+	background-color: white;
+	z-index: 3;
+	background-color: white;
+	background: #3F9; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#3F9, #73B1B7); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#3F9, #73B1B7); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#3F9, #73B1B7); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#3F9, #73B1B7); /* Standard syntax (must be last) */
+}
+
+nav {
+	margin: 10px auto; 
+	text-align: center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+
+nav ul {
+	background:#3F9 ; 
+	box-shadow: 5px 5px 9px #888;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	padding: 0px;
+}
+
+
+nav ul li {
+	float: left;
+}
+nav ul li:hover {
+	background: #FF6;
+}
+nav ul li:hover a {
+	color: #000;
+}
+nav ul li a {
+	display: block; 
+	padding: 5px;
+	width: 150px; /*Promenila sirinu sa 100px*/
+	color: /*#2f302c*/ #000; 
+	font-weight: bold;
+	text-decoration: none;
+}
+
+nav ul ul {
+	background: #99FFCC; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+}
+
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+nav ul ul li a {
+	padding: 5px;
+	width: 150px; /*Promena visine sa 100px*/
+	color: #000;
+	font-weight: normal;
+}	
+nav ul ul li a:hover {
+	background:#FF6;
+}
+
+/*LOGO*/
+#logo {
+	width: 70px;
+}
+
+/*POMOCNI MENI*/
+.okvir1{ 
+
+	display: block;
+	float: left;
+	position: fixed;
+		/*top: 243px;
+		left: 16px;*/
+		margin: 0px auto auto 0px;
+		background-color: white;
+		width: 350px;
+		padding: 28px 0px 0px 0px;
+		top: 260px;
+	}
+
+/*aside {
+	display: inline-block;
+	float: left;
+	background-color: white;
+	width: 26.6%;
+	padding-top: 40px;
+	position: relative;
+	}*/
+	#meni1 {
+		float: left;
+
+	}
+
+	#meni1_1 {
+		list-style-type: none;
+		background-color: white;
+		width: 200px;
+		margin: 0px;
+		padding: 0px;
+		box-shadow: 5px grey;
+		border-radius: 10px;
+	}
+
+	.stavka1 {
+		width: 165px;
+		border-top: 3px solid #3F9;
+		border-right: 3px solid #3F9;
+		border-left: 3px solid #3F9;
+		padding: 5px 30px;
+		display: block;
+		border-radius: 0px 0px 10px 10px;
+	}
+
+	.stavka1 a {
+		text-decoration: none;
+		color: black /*#2f302c*/;
+		font-weight: normal;
+	}
+
+	.stavka1:hover { 
+		background-color: #FF6;
+	}
+
+	#poslednja_stavka {
+		border-bottom: 3px solid #3F9;
+	}
+
+	#prva_stavka {
+		border-radius: 0px;
+		background-color: #3F9;
+	}
+
+	#prva_stavka a{
+		font-weight: bold;
+	}
+
+	.manji_font a {
+		font-size: 16px;
+	}
+
+	#druga_stavka {
+		white-space: nowrap;
+	}
+
+	/*SADRZAJ*/
+	section {
+		
+		padding-top: 10px; /*38px*/
+		padding-bottom: 18px;
+		background-color: white;
+		width: 73.4%;
+		margin: 0px 0px auto auto;
+	}
+
+	.nextSecurity {
+		margin-top: 24px;
+	}
+
+	.nextSpeed {
+		margin-top: -28px;
+	}
+
+	.nextStability {
+		margin-top: -28px;
+	}
+
+	.prevUserInterface {
+		position: relative;
+		top: -4px;
+	}
+
+	article {
+		position: relative;
+		background-color: #73B1B7;
+		padding: 10px;
+		margin-bottom: 20px;
+		border-radius: 20px;
+	}
+
+	footer {
+		display: block;
+		/*margin-left: 50px;*/
+		background-color: #109d59;
+		text-decoration:blink;
+		/*margin-top:50px;*/
+		color:#000;
+		text-align:center;
+		font-size:20px;
+		border-top: 4px solid #000;
+		padding: 30px;
+		margin: 0px;
+	}
+
+/*h1 {
+		display: block;
+		font-size: 2em;
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+		margin-left: 0;
+		margin-right: 0;
+		font-weight: bold;
+	}
+	*/
+
+	#sadrzaj_speed, #sadrzaj_stability, #sadrzaj_user_interface {
+		position: relative;
+		background-color: #73B1B7;
+		border-radius: 20px;
+		/*margin: 38px auto;*/
+		padding: 10px;
+		width: 98.5%;
+
+	}
+
+	#main1 {
+		/*display: block;*/
+		position: relative;
+		width: 1316px;
+		margin: 0px auto;
+		float: none;
+		/*background-color: white;*/
+		padding: 38px 0px;
+	}
+
+	/*SLIKE*/
+
+	#chrome_web_browser, #chrome_bitly_malware, #incognito_m, #chrome_crash {
+		width: 500px;
+	}
+
+	#do_not_t, #logo_v8 {			/*STAVITI ANIMACIJU DA IZ KRUGA ISKACE CRVENI KRUG SA TEKSTOM DO NOT TRACK*/
+		width: 200px;
+	}
+
+	.google_chrome_logo {
+		width: 200px;
+	}
+
+	#task_manager-google_chrome {
+		width: 400px;
+	}
+
+	/*NA STRANI SECURITY PRVI ARTICAL*/
+
+#okrugla_slika {
+	border-radius: 100%;
+	position: absolute;
+	z-index: 3;
+	left: 320px;
+	top: 78.5px;
+	width: 40px;
+}
+
+#krug1{
+	position: absolute;
+	z-index: 2; 
+	border-radius: 100%;
+	top: 76px;
+	left: 150px;
+	width: 110.5px; 
+	height: 113px; /*116.5px*/
+	border: 2px solid #109d59;
+	opacity: 0;
+}
+
+#krug {
+	border-radius: 100%;
+	position: absolute;
+	z-index: 2;
+	left: 339px;
+	top: 80px;
+	width: 41px;
+	height: 41px;
+	border: 1px solid #109d59;
+	opacity: 0;
+}
+
+.chrome_web_browser {
+	position: relative;
+	z-index: 1;
+	left: 30%;
+	box-shadow: 5px 5px 5px #1a1a1a;
+}
+
+.tekst {
+	margin-top: 40px;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+
+}
+
+/*SLIKE*/
+
+.chrome_web_browser, #chrome_bitly_malware, #incognito_m, #chrome_crash, #do_not_t {
+	width: 500px;
+}
+
+#incognito_m {
+	box-shadow: 9px 9px 9px #1a1a1a;
+	margin: 0px 25%;
+}
+
+#logo_v8, #tunel {			/*STAVITI ANIMACIJU DA IZ KRUGA ISKACE CRVENI KRUG SA TEKSTOM DO NOT TRACK*/
+	width: 200px;
+}
+
+.google_chrome_logo {
+	width: 200px;
+}
+
+#task_manager-google_chrome {
+	width: 400px;
+}
+
+#chrome_bitly_malware {
+	box-shadow: 9px 9px 9px #1a1a1a;
+	margin: 0px 25%;
+}
+
+#incognito_box {
+	width: 112px;
+	position: relative;
+	margin: 0px auto;
+}
+
+#incognito_mode_logo {
+	width: 112px;
+}
+
+.eyes {
+	width: 5px;
+	height: 5px;
+	background-color: black;
+	border-radius: 100%;
+	position: absolute;
+}
+
+#left_eye {
+	position: absolute;
+	top: 70.5px;
+	left: 34px;
+	animation-name: levo;
+	animation-duration: 10s;
+}
+
+#right_eye {
+	position: absolute;
+	top: 70.5px;
+	left: 63px;
+	animation-name: desno;
+	animation-duration: 10s;
+}
+
+@keyframes levo {
+	0%   {background-color: black; top: 70.5px; left: 34px;}
+	10%  {background-color: black; top: 70.5px; left: 40px;}
+	20%  {background-color: black; top: 70.5px; left: 45px;}
+	30%   {background-color: black; top: 70.5px; left: 40px;}
+	40%   {background-color: black; top: 70.5px; left: 34px;}
+	50%  {background-color: black; top: 70.5px; left: 40px;}
+	60%  {background-color: black; top: 70.5px; left: 45px;}
+	75%   {background-color: black; top: 70.5px; left: 40px;}
+	100% {background-color: black; top: 70.5px; left: 34px;}
+}
+
+@keyframes desno {
+	0%   {background-color: black; top: 70.5px; left: 63px;}
+	10%  {background-color: black; top: 70.5px; left: 69px;}
+	20%  {background-color: black; top: 70.5px; left: 74px;}
+	30%   {background-color: black; top: 70.5px; left: 69px;}
+	40%   {background-color: black; top: 70.5px; left: 63px;}
+	50%  {background-color: black; top: 70.5px; left: 69px;}
+	60%  {background-color: black; top: 70.5px; left: 74px;}
+	75%   {background-color: black; top: 70.5px; left: 69px;}
+	100% {background-color: black; top: 70.5px; left: 63px;}
+}
+
+/*POSLEDNJI ARTIKAL*/
+
+/*#no {
+	position: relative;
+}*/
+
+#no_flash {
+	width: 256px;
+	position: absolute;
+	top: 15px;
+	left: 460px;
+	opacity: 0;
+}
+
+#adobe_flash_player {
+	position: absolute;
+	top: 75px;
+	left: 530px;
+}
+
+#flash_centriranje {
+	border: 3px solid black;
+	width: 700px;
+	height: 270px;
+	margin:  40px auto 28px auto;
+	position: relative;
+}
+
+/*STRANICA STABILITY*/
+
+#slajd {
+	position: relative;
+	background-color: white;
+	width: 400px;
+	height: 244px;
+	box-shadow: 9px 9px 9px #1a1a1a;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+#textslide {
+	position: relative;
+	top: -5px;
+	width: 300px;
+	height: 42px;
+	border-left: 50px solid rgb(115, 177, 183);
+	border-right: 50px solid rgb(115, 177, 183);
+	border-top: 1px solid rgb(115, 177, 183);
+	text-align: center;
+	padding-top: 8px;
+}
+
+
+
+/*STRANICA SPEED*/
+
+#speed {
+	float: right;
+	width: 1250px;
+	height: 250px;
+	position: relative;
+}
+
+h2 {
+	text-align: center;
+}
+
+#tekst1 {
+	clear: right;
+}
+
+#logo_v8 {
+	width: 50px;
+	top: 95px;
+	right: 0px;
+	position: absolute;
+	z-index: 2;
+	
+}
+
+#tunel {
+	float: right;
+	right: 0px;
+	top: 15px;	
+	position: absolute;
+	border-radius: 100%;
+	transform: rotate(50deg);
+	z-index: 1;
+}
+
+#wings {
+	position: absolute;
+	left: 150px;
+	top: 0px;
+	width: 500px;
+	height: 200px;
+	z-index: 1;
+	opacity: 0;
+}
+
+/*STRANICA USER INTERFACE*/
+
+.ui_toggle {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100%;
+	
+}
+
+.google_chrome_logo {
+	position: relative;
+	z-index: 1;
+	
+}
+
+#toggle1, #toggle2 {
+	width: 200px;
+	height: 0px;
+	position: absolute;
+	background-color: #109d59;
+	overflow: hidden;
+	z-index: 2;
+	
+}
+
+#drugitoggle, #trecitoggle {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 3;
+}
+
+#toggle3D {
+	width: 210px;
+	height: 0px;
+	position: absolute;
+	background-color: #109d59;
+	z-index: 2;
+	overflow: hidden;
+}
+
+#toggle_text{
+	padding: 45px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#toggle_text1 {
+	padding: 50px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#toggle_text2 {
+	padding: 50px 0px 40px 30px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#prvitoggle  {
+	width: 210px;
+	height: 200px;
+	position: absolute;
+	z-index: 3;
+}
+
+#ui_toggle3D {
+	border-radius: 100%;
+	overflow: hidden;
+	display: inline-block;
+	width: 210px;
+	height: 200px;
+	position: relative;
+}
+
+#google_chrome_logo3D {
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	top: -11px;
+	left: -4px;
+	z-index: 1;
+}
+
+#logo_centriranje {
+	position: relative;
+	width: 650px;
+	height: 200px;
+	margin: 0px auto;
+}
+
+
+
+/*PRIVACY DO NOT TRACK*/
+
+#do_not_t_okvir {
+	position: relative;
+	margin: 0px 25%;
+}	
+
+#red_square {
+	position: absolute;
+	width: 210px;
+	height: 25px;
+	border: 3px solid #d32f2f;
+	top: 325px;
+	left: 90px;
+}
+
+#slideshow0_img {
+	position: absolute;
+	right: 0px;
+	width: 200px;
+	height: 200px;
+}
+
+#slajd0 {
+	overflow: hidden;
+	position: relative;
+	border: 1px solid white;
+	width: 200px;
+	height: 200px;
+	margin: 0px auto 0px auto;
+}
+
+.dot {
+	position: relative;
+	top: 20px;
+	left: 450px;
+	border-radius: 100%;
+	border: 1px solid white;
+	background-color: white;
+	width: 8px;
+	height: 8px;
+}
+
+.dot1 {
+	position: relative;
+	top: 10px;
+	left: 480px;
+	border-radius: 100%;
+	border: 1px solid white;
+	background-color: white;
+	width: 8px;
+	height: 8px;
+}
+
+.active {
+	background-color: green;
+}
+
+	
+/*TABELA*/
+
+table {
+	margin-bottom: 28px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+th {
+	padding: 10px 5px;
+	font-size: 15px;
+}
+
+td {
+	font-size: 14px;
+	padding: 5px;
+}
+
+#red_row:hover td {
+	background-color: #d32f2f;
+}
+
+.yellow_row:hover td {
+	background-color: #FF6;
+}
+
+.green_row:hover td {
+	background-color: #3F9;
+}
+
+table {
+	background-color: #109d59;
+}
+
+td {
+	background-color: white;
+}
+
+.th_no_color {
+	background-color: white;
+}
+
+.text_on_left {
+	text-align: left;
+}
+
+/*POD NASLOVI*/
+
+h3 {
+	padding-left: 31px;
+}
+
+/*DUGMAD*/
+
+.dugmeNavigacije {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  width: 129px;
+  background-color: #0080FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 1059px;
+  margin-top: 10px;
+  margin-bottom: -30px;
+}
+.dugmeNavigacije:hover {
+  background-color: #FF0000;
+}
+.dugmeNavigacije:active {
+  background-color: #3F9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.dugmePrevious {
+  margin-left: 906px;
+  margin-right: 20px;
+}
+
+.dugmeNavigacijeNext {
+	position: relative;
+	padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  width: 129px;
+  background-color: #0080FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 1059px;
+  margin-top: -20px;
+  margin-bottom: -30px;
+  top: -24px;
+}
