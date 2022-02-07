@@ -1,0 +1,503 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver Fluid Grid Properties
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	Inspiration from "Responsive Web Design" by Ethan Marcotte 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	and Golden Grid System by Joni Korpi
+	http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+	
+	
+	width: 87.36%;
+
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	border: 4px solid #3F9;
+	text-align: center;
+	width:100%;
+	background-color: white;
+	z-index: 2;
+	background-color: white;
+	background: #ED2939; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#3F9, #73B1B7); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#3F9, #73B1B7); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#3F9, #73B1B7); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#3F9, #73B1B7); /* Standard syntax (must be last) */
+}
+nav {
+	margin: 10px auto; 
+	text-align: center;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav ul li:hover > ul {
+	display: block;
+	}
+
+
+nav ul {
+	background:#3F9 ; 
+	box-shadow: 5px 5px 9px #888;
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	padding: 0px;
+	}
+
+
+nav ul li {
+	float: left;
+	}
+nav ul li:hover {
+	background: #FF6;
+	}
+nav ul li:hover a {
+	color: #000;
+	}
+nav ul li a {
+	display: block; 
+	padding: 5px;
+	color: #000; 
+	text-decoration: none;
+	}
+			
+nav ul ul {
+	background: #99FFCC; 
+	padding: 0;
+	position: absolute; 
+	top: 100%;
+	}
+	
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+	}
+nav ul ul li a {
+	padding: 5px;
+	width: 150px; 
+	color: #000;
+	}	
+nav ul ul li a:hover {
+	background:#CF6;
+	}
+		
+nav ul ul ul {
+	position: absolute; 
+	left: 100%; 
+	top: 0;
+	}
+nav ul ul ul li a {
+	padding: padding: 5px;
+	width: 150px;
+	color: #fff;
+	white-space: nowrap;
+	}
+#racunar {
+	clear: both;
+	float: left;
+	margin-left: 20.8333%;
+	width: 58.3333%;
+	display:none;
+}
+#mobilni {
+	clear: none;
+	float: left;
+	margin-top:20px;
+	width: 100%;
+	display: block;
+	border:medium #000 solid;
+	background:url(../slike/green-gradient-background-tumblr-wallpaper-3.jpg);
+}
+#sadrzajstrane {
+	clear: both;
+	float: left;
+	
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tekst1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tekst2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.tekst
+		{
+	border:medium #000 solid;
+	margin-top:20px;
+	box-shadow: 10px 10px 10px #888888;
+	background-color: #73B1B7;
+	
+		}
+.slike
+		{
+			float:right;
+			margin-top:-20px;
+			display:inline-block;
+			height:120px;
+			width:120px;
+		}
+		
+#interlink
+{
+	width:150px;
+	display:block;
+	margin:auto;
+}
+
+#android
+{
+	clear: none;
+	float: left;
+	margin-left: 4.1666%;
+	width: 37.5%;
+	display: block;
+	display:none;
+}
+
+#apple
+{
+	clear: both;
+	float: left;
+	margin-left:4.1666%;
+	width: 37.5%;
+	display: block;
+	display:none;
+}
+.linkici
+		{
+			color:#000;
+			font-family:"Times New Roman", Times, serif;
+			font-size:18px;
+			font-weight:bold;
+		}
+		
+.uredjaji
+{
+			border:medium #15FF15 solid;  
+			display:none;
+			border-radius: 10px 10px 10px 10px;
+			margin-top:15px;
+			height:150px;
+}
+.slicice
+{
+	display:block;
+	margin:auto;
+}
+#downimg
+{
+	width:250px;
+}
+h1 { text-align:center;}
+
+#slikamobilni
+{
+	margin-top:30px;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#racunar {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+	background:url(../slike/f11386-05l.jpg);
+	border:medium #000 solid;
+	margin-top:30px;
+}
+#mobilni {
+	clear: none;
+	float: left;
+	margin-left: 2.5641%;
+	width: 100%;
+	display: block;
+	margin-top:30px;
+}
+#sadrzajstrane {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+	margin-top:20px;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tekst1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tekst2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.tekst
+{
+	padding:15px;
+}
+nav ul ul ul li a {
+	padding: padding: 5px;
+	width: 90px;
+	color: #fff;
+	white-space: nowrap;
+	}
+nav ul ul li a {
+	padding: 5px;
+	width: 90px; 
+	color: #000;
+	}	
+nav ul li a {
+	display: block; 
+	padding: 5px;
+	width: 90px; 
+	color: #000; 
+	text-decoration: none;
+	}
+nav ul li:active > ul {
+	display: block;
+	}	
+#android {
+	clear: none;
+	float: left;
+	margin-left: 15.3846%;
+	width: 23.0769%;
+	display: none;
+	}	
+#apple {
+	clear: both;
+	float: left;
+	margin-left: 12.8205%;
+	width: 23.0769%;
+	display: none;
+	}	
+#slikamobilni
+{
+	margin-top:50px;
+	height:150px;
+	width:250px;
+}
+#downimg
+{
+	width:350px;
+}
+#interlink
+{
+	width:250px;
+	display:block;
+	margin:auto;
+}
+.slike
+		{
+			float:right;
+			margin-top:-10px;
+			display:inline-block;
+			height:170px;
+			width:170px;
+		}
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 99%;
+	margin-left:0;
+	
+
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#header {
+	clear: both;
+	float: left;
+	margin-left:0;
+	width:99%;
+	display: block;
+}
+
+#racunar {
+	clear: none;
+	float: left;
+	margin-left: 12.2448%;
+	width: 38.7755%;
+	display: block;
+	
+}
+#mobilni {
+	clear: none;
+	float: left;
+	margin-left: 2.0408%;
+	width: 38.7755%;
+	display: block;
+}
+#sadrzajstrane {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#footer {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+#tekst1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 89.7959%;
+	display: block;
+}
+#tekst2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 89.7959%;
+	display: block;
+}
+ .tekst
+{
+	padding:35px;
+	margin-bottom:30px;
+}
+nav ul ul ul li a {
+	 padding: 5px;
+	width: 150px;
+	color: #fff;
+	white-space: nowrap;
+	}
+nav ul ul li a {
+	padding: 5px;
+	width: 150px; 
+	color: #000;
+	}	
+nav ul li a {
+	display: block; 
+	padding: 5px;
+	width: 150px; 
+	color: #000; 
+	text-decoration: none;
+	}
+#android {
+	clear: none;
+	float: left;
+	margin-left: 12.2448%;
+	width: 28.5714%;
+	display:none;
+	margin-bottom:20px;
+	}
+#apple {
+	clear: both;
+	float: left;
+	margin-left: 10.204%;
+	width: 28.5714%;
+	display:none;
+	margin-bottom:20px;
+	}
+.slike
+		{
+			float:right;
+			margin-top:-20px;
+			display:inline-block;
+			height:200px;
+			width:200px;
+		}
+body {font-family: Helvetica, sans-serif; font-size: 18px; line-height: 24px;}
+	
+}
