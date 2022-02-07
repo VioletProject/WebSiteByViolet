@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Page</title>
+<link href="pocetna/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="pocetna/pocetna layout.css" rel="stylesheet" type="text/css">
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="file:///C|/Program%20Files%20(x86)/Adobe/Adobe%20Dreamweaver%20CS6/Configuration/BuiltIn/Fluid%20Grid%20Layout/respond.min.js"></script>
+</head>
+<body>
+<div class="gridContainer clearfix">
+ <div id="header">
+  <img id="logo" src="slike/logo.png"> 
+		<nav>
+				<ul>
+				<li><a href="index.html">First page</a></li>
+				<li><a href="#">History</a>
+					<ul>
+						<li><a href="Prvi deo projekta Cirovic.html">Announcement</a></li>
+						<li><a href="Drugi deo projekta Cirovic.html">Public release</a></li>
+						<li><a href="Treci deo projekta Cirovic.html">Development</a></li>
+						<li><a href="Cetvrti deo projekta Cirovic.html">Version history</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+						<li><a href="features_security.html">Security</a></li>
+						<li><a href="features_privacy.html">Privacy</a></li>
+						<li><a href="features_speed.html">Speed</a></li>
+						<li><a href="features_stability.html">Stability</a></li>
+						<li><a href="features_user_interface.html">User interface</a></li>
+					</ul>
+				</li>
+				<li><a href="Glavni deo projekta Cirovic.html">Google apps</a></li>
+
+				<li> <a href="download.html"> Download </a> </li> 
+				<li> <a href="kontakt.html"> Contact </a> </li>
+			</ul>
+		</nav>
+  
+  </div>
+  </div>
+  <div id="anketa">
+  <p> Which browser you are using </p>
+
+<form action=""
+oninput="x.value=parseInt(a.value)">
+ 
+  <input type="radio" name="browser" value="Gogogle Chrome" checked> Google Chrome <br>
+  <input type="radio" name="browser" value="Mozilla Firefox"> Mozila Firefox<br>
+  <input type="radio" name="browser" value="Safari"> 
+  Safari
+ <br/>
+  <input type="radio" name="browser" value="Internet Explorer">Internet Explorer
+ <br/>
+ <p> 
+How would you rate your browser </p>
+ 
+ <br/>
+  0
+  <input type="range" id="a" name="a" value="50">
+  
+
+  =
+  <output name="x" for="a"></output>
+  <br><br>
+  <input type="submit">
+</form>
+  
+  </div>
+  <div id="download">
+  	<a href="download.html">
+
+<p> Download Google Chrome  </p>
+
+ <img src="slike/logo.png" name="slikadow" id="slikadow">
+
+</a>
+  
+  </div>
+  <div id="SadrzajStrane">
+  <img src="slike/h1.png" name="zoomin" width="350" height="91" id="zoomin"> 
+
+  
+    <div id="teks2" class="tekst">
+    <p> Google Chrome is a freeware web browser developed by Google. It was first released in 2008, for Microsoft Windows, and was 						later ported to Linux, macOS, iOS and Android. Google Chrome is also the main component of Chrome OS, where it serves as a platform for running web apps. </p>
+    </div>
+    <div id="teks1" class="tekst">
+    <p> As of November 2016, StatCounter estimates that Google Chrome has a 63% worldwide usage share of web browsers as a desktop browser. It also has 51% market share across all platforms combined, because it is also the most popular browser for smartphones. Its success has led to Google expanding the "Chrome" brand name on various other products such as Chromecast, Chromebook, Chromebit, Chromebox and Chromebase. </p>
+    
+    </div>
+  </div>
+  <div id="footer">This is the content for Layout Div Tag "footer"</div>
+</div>
+</body>
+</html>

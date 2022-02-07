@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Glavni deo projekta Cirovic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+  font-family:Helvetica, sans-serif; font-size:18px; background-color:#CCF0F6;
+}
+.hederGlavnogMenija { 
+  width: 1270px; 
+  border: 4px solid #3F9;
+  float: none;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: -8px;
+  right: 5px;
+  left: 0px;
+  z-index: 2;
+  background-color: white;
+  background: #ED2939; /*For browsers that do not support gradients*/
+  background: -webkit-linear-gradient(#3F9, #73B1B7); /*For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(#3F9, #73B1B7); /*For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(#3F9, #73B1B7); /*For Firefox 3.6 to 15*/
+  background: linear-gradient(#3F9, #73B1B7); /*Standard syntax (must be last)*/
+}
+nav {
+  margin: 10px auto; 
+  text-align: center;
+}
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+  }
+nav ul {
+  background: #3F9 ; 
+  box-shadow: 5px 5px 9px #888;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  padding: 0px;
+  }
+nav ul li {
+  float: left;
+  }
+nav ul li:hover {
+  background: #FF6;
+  }
+nav ul li:hover a {
+  color: #000;
+  }
+nav ul li a {
+  display: block; 
+  padding: 5px;
+  width: 150px; 
+  color: #000; 
+  text-decoration: none;
+  } 
+nav ul ul {
+  background: #99FFCC; 
+  padding: 0;
+  position: absolute; 
+  top: 100%;
+  }
+nav ul ul li {
+  float: none; 
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative;
+  }
+nav ul ul li a {
+  padding: 5px;
+  width: 150px; 
+  color: #000;
+  } 
+nav ul ul li a:hover {
+  background:#CF6;
+  }  
+nav ul ul ul {
+  position: absolute; 
+  left: 100%; 
+  top: 0;
+  }
+nav ul ul ul li a {
+  padding: 5px;
+  width: 150px;
+  color: #fff;
+  white-space: nowrap;
+  }
+.okvirSideMeni { 
+  float: left;
+  position: fixed;
+  top: 208px;
+  left: 16px;
+}
+#stilSideMeni {
+  list-style-type: none;
+  background-color: white;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 5px grey;
+  border-radius: 10px;
+}
+.stavka1 {
+  width: 200px;
+  font-weight: bold;
+  border-top: 3px solid #3F9;
+  border-right: 3px solid #3F9;
+  border-left: 3px solid #3F9;
+  padding: 5px 30px;
+  display: block;
+  border-radius: 0px 0px 10px 10px;
+}
+.stavka1 a {
+  text-decoration: none;
+  color: black;
+}
+.stavka1:hover { 
+  background-color: #FF6;
+}
+#krajnjaStavka {
+  border-bottom: 3px solid #3F9;
+}
+#prvaStavka {
+  border-radius: 0px;
+  background-color: #3F9;
+}
+.manjiFont a {
+  font-size: 16px;
+  margin-left: 6px;
+  text-align: left;
+}
+#srednjaStavka{
+  white-space: nowrap;
+}
+
+#logoSajta {
+  width: 70px;
+  float: none;
+}
+.stilDivPrvi {
+  text-align: left;
+  font-size: 21px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+a:hover {
+  color: #00FF00;
+}
+a:active {
+  color: #FF33FF;
+}
+.divoviGlavnogDela {
+  border-radius: 17px 70px;
+  border: solid red;
+  background-color: #FFFF66;
+  padding: 20px;
+  padding-top: 2px;
+  width: 950px;
+  height: 572px; 
+  margin-left: 310px;
+  box-shadow: 10px 10px 5px #888888;
+  text-align: justify;
+  font-size: 20px;
+}
+.mySlides {display:none}
+.demo {cursor:pointer}
+#slikaVeca {
+  float: right;
+  border-radius: 26%;
+  border: solid;
+  border-color: red;
+  box-shadow: 20px 10px 10px #888888;
+}
+#slikaManja {
+  margin-left: 290px;
+}
+.leviDiv {
+  float: left;
+  width: 50%;
+  margin-top: 60px;
+}
+.desniDiv {
+  float: right;
+  width: 34%;
+  margin-top: 60px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.dugmeNavigacije {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  width: 200px;
+  background-color: #0080FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 400px;
+  margin-top: 60px;
+}
+.dugmeNavigacije:hover {
+  background-color: #FF0000;
+}
+.dugmeNavigacije:active {
+  background-color: #3F9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.mySlides {display:none}
+#slideshowKontejner {
+  width: 960px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 320px;
+  margin-top: 590px;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.text {
+  color: red;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 26px;
+  margin-left: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dotPrvo {margin-left: 749px;}
+.active {background-color: red;}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.slikeSlajdera {
+  border-radius: 32px;
+  border: solid red 6px;
+  width: 100%;
+  height: 500px;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}}
+.dugmetaDrive {
+  background-color: red;
+  border: solid black 1px;
+  color: black;
+  padding: 15px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  margin-top: 20px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.dugmeDrive:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,1),0 17px 50px 0 rgba(0,0,0,0.1);
+}
+.dugmetaApps {
+  background-color: #3F9;
+  border: solid red;
+  color: black;
+  padding: 16px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /*Safari*/
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.dugmeApps:hover {
+  background-color: red;
+  color: white;
+}
+#poljeAnimacije {
+  background-image: url("Slike sajta/Calendar Cartoon.jpg");
+  height: 152px;
+  width: 160px;
+  position: absolute;
+  border-radius: 20px;
+  border: solid red;
+}
+#slikaHangouts{
+  display: block;
+  margin-left: 30px; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.kontejnerPrvi {
+  position: relative;
+  width: 50%;
+}
+.efekatPrvi {
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  left: 30px;
+  right: 20px;
+  height: 206px;
+  width: 206px;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: #0080FF;
+}
+.kontejnerPrvi:hover .efekatPrvi {
+  opacity: 1;
+}
+.tekstEfekta {
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+#leviDivHangouts {
+  float: left;
+  width: 10%;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+#desniDivHangouts {
+  float: right;
+  width: 76%;
+  margin-top: 0px;
+  margin-left: -60px;
+}
+.kontejnerDrugi {
+  position: relative;
+  width: 226px;
+  float: right;
+  margin-right: 0px;
+  margin-left: 20px;
+}
+.efekatDrugi {
+  position: absolute;
+  top: 2px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 226px;
+  width: 226px;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: #0080FF;
+}
+.kontejnerDrugi:hover .efekatDrugi {
+  opacity: 1;
+}
+#slikaHangouts {
+  display: block;
+  margin-left: 20px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+function proveraCekiranja() {
+  var odabirYes=document.getElementById('opcijaPrva').checked;
+  var odabirNo=document.getElementById('opcijaDruga').checked;
+  if(odabirYes==false && odabirNo==false){
+    alert('Please select any option if you want to visit the official website of Gmail.\nWhen you visit Gmail, you can create your Gmail account.');
+    return false;}
+  else{
+    return true;}
+}
+function otcekiranjePolja() {
+  var opcijaOther=document.getElementById('cekOther').checked;
+  if(opcijaOther=true){
+    for(var i=1; i<=5; i++){
+      document.getElementById('cek'+i).checked=false;}
+    opcijaOther=true;}
+}
+function proveraCekiranjaDruga() {
+  var opcijaPrva=document.getElementById('cek1').checked;
+  var opcijaDruga=document.getElementById('cek2').checked;
+  var opcijaTreca=document.getElementById('cek3').checked;
+  var opcijaCetvrta=document.getElementById('cek4').checked;
+  var opcijaPeta=document.getElementById('cek5').checked;
+  var opcijaOther=document.getElementById('cekOther').checked;
+  if(opcijaPrva==false && opcijaDruga==false && opcijaTreca==false && opcijaCetvrta==false && opcijaPeta==false && opcijaOther==false){
+    alert('You have to select any option if you want to visit the official website of Jamboard.');
+    return false;}
+  else{
+    return true;}
+}
+function proveraCekiranjaPrva() {
+  var opcijaPrva=document.getElementById('cek1').checked;
+  var opcijaDruga=document.getElementById('cek2').checked;
+  var opcijaTreca=document.getElementById('cek3').checked;
+  var opcijaCetvrta=document.getElementById('cek4').checked;
+  var opcijaPeta=document.getElementById('cek5').checked;
+  if(opcijaPrva==true || opcijaDruga==true || opcijaTreca==true || opcijaCetvrta==true || opcijaPeta==true){
+    document.getElementById('cekOther').checked=false;
+  }
+}
+</script>
+</head>
+
+<body>
+<div class="hederGlavnogMenija" id="okvir">
+    <img id="logoSajta" src="Slike sajta/logo.png"> 
+   <nav>
+				<ul>
+				<li><a href="index.html">First page</a></li>
+				<li><a href="#">History</a>
+					<ul>
+						<li><a href="Prvi deo projekta Cirovic.html">Announcement</a></li>
+						<li><a href="Drugi deo projekta Cirovic.html">Public release</a></li>
+						<li><a href="Treci deo projekta Cirovic.html">Development</a></li>
+						<li><a href="Cetvrti deo projekta Cirovic.html">Version history</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+						<li><a href="features_security.html">Security</a></li>
+						<li><a href="features_privacy.html">Privacy</a></li>
+						<li><a href="features_speed.html">Speed</a></li>
+						<li><a href="features_stability.html">Stability</a></li>
+						<li><a href="features_user_interface.html">User interface</a></li>
+					</ul>
+				</li>
+				<li><a href="Glavni deo projekta Cirovic.html">Google apps</a></li>
+
+				<li> <a href="download.html"> Download </a> </li> 
+				<li> <a href="kontakt.html"> Contact </a> </li>
+			</ul>
+		</nav>
+  </div>
+<div class="okvirSideMeni">
+    <nav id="meni1">
+      <ul id="stilSideMeni">
+        <li class="stavka1" id="prvaStavka"><a href="#okvir"><span>GOOGLE APPS</span></a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idGmail">Gmail</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idDrive">Google Drive</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idForms">Docs, Sheets, Slides, Forms</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idSites">Google Sites</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idCalendar">Google Calendar</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idHangouts">Google Hangouts</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idPlus">Google+</a></li>
+        <li class="stavka1 manjiFont" id="srednjaStavka"><a href="#idVault">Google Vault</a></li>
+        <li class="stavka1 manjiFont" id="krajnjaStavka"><a href="#idJamboard">Jamboard</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div>
+<h1 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><center>GOOGLE APPS</center></h1>
+<div class="divoviGlavnogDela" id="idGmail">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Gmail</left></i></h2>
+<img style="float:right; margin-top: 0px; margin-right: 10px; margin-left: 10px; margin-bottom: 0px;" src="Slike sajta/Gmail icon.png">
+<img style="float:right; margin-top: 0px; margin-right: 0px; margin-left: 14px; margin-bottom: 0px;" src="Slike sajta/Gmail Transparent.png">
+Gmail is a free Web e-mail service, which is owned by Google. Gmail was first used in April 2004, and every user has used 1GB of storage space. The interface is based on Ajax technology and JavaScript technologies. Users are able to use all of Google's algorithms and all techniques for using e-mail. Gmail is available in forty languages and today we can say that Gmail interface can runs on almost every version of every browser. The offered storage space is constantly increasing speed 4 bytes per one second. The available storage space per user amounted to more than 4GB on 22 October 2007. Google is first enabled users to talk directly with the web interface using Ajax, but later made <a href="http://google-talk.software.informer.com/download/">GTalk</a> application for users who want to chat via the web interface. There are also some criticism of Gmail, but the biggest criticism is related to targeted advertising, which disturb the privacy of the user and it was a big problem for many users. Nonetheless, we can say that Gmail is very useful for users who want to exchange e-mail and because of that Gmail is very popular.</br>
+<p style="margin-left:143px; font-weight:bold; margin-top:6px; margin-bottom:0px; text-align:left;"><i>We have a question for you. Do you use Gmail?</i></p>
+<form action="https://www.google.com/gmail/about/" method="get" onsubmit="return proveraCekiranja();" style="margin-left:143px;">
+<input type="radio" name="autoRenew" id="opcijaPrva"/> <strong><i>Yes, I am user of Gmail</i></strong></br>
+<input type="radio" name="autoRenew" id="opcijaDruga"/> <strong><i>No, I am not user of Gmail</i></strong></br>
+<input type="submit" id="dugmeLink" value="CLICK HERE TO VISIT GMAIL" style="height:40px; font-weight:bold; width:220px;"/>
+</form></strong>
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idDrive" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google Drive</left></i></h2>
+<img style="float:right; margin-left:24px; margin-top:246px; margin-right: 24px;" src="Slike sajta/Google Drive Transparent.png">
+<img style="float:right; border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-left:24px; margin-right:-334px;" src="Slike sajta/Drive Cloud.png">
+Google Drive is a service that is used for storage, but it also serves to synchronize the files. We can say that Google Drive allows its users to share and store files in the cloud. This disc includes Google Docs, Sheets, and office suite that called Slides. Google Drive has had 240 million monthly active users by October 2014. The client communicates with Google Drive and synchronize data, but Google Drive client's software must be installed on the user's computer. Google Drive can be accessed offline by using the Google Chrome Chrome apps that can be installed from the <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a>. Documents, spreadsheets, presentations and drawings can be seen and be modified offline via independent Chrome applications. Google Drive for Android and iOS supports offline view all file types. Offline editing of various documents and also tables are supported through different standalone applications for mobile devices. Google offers an extension for Google Chrome Save to Google Drive, which allows many users to store Web content on Google Drive through action or search through the menu.</br>
+<a href="https://www.google.com/intl/en/drive/"><button class="dugmetaDrive dugmeDrive" style="margin-left:100px;"><strong>Visit now Google Drive</strong></button></a>
+<a href="https://www.google.com/drive/download/"><button class="dugmetaDrive dugmeDrive" style="margin-left:30px;"><strong>Download Google Drive</strong></button></a>
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idForms" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google Docs, Sheets, Slides and Forms</left></i></h2>
+<img style="float:right; margin-left:20px; margin-right:10px;" src="Slike sajta/Google documents.png">
+<img style="float:right; margin-top:272px; margin-left:20px; margin-right:-256px;" src="Slike sajta/Apps box.png">
+<dl>
+  <dt style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><strong>Google Docs</strong></dt>
+  <dd>Google Docs allows the creation of all documents similar to the Office package, but with limited options since they are still accessed via the web interface. Google Docs are enough tool for simpler documents.</dd>
+  <dt style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><strong>Google Sheets</strong></dt>
+  <dd>Google Sheets makes your data pop with colorful charts and graphs. This is a useful and very good way to effectively stylize your data and present them graphically. On the Internet you can find good examples.</dd>
+  <dt style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><strong>Google Slides</strong></dt>
+  <dd>Google Slides is an online presentations app that allows you to show off your works in a visual ways. You can do different things like creating and editing presentations, editing a presentation and sharing it effortlessly.</dd>
+  <dt style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><strong>Google Forms</strong></dt>
+  <dd style="margin-right: 270px;">With Google Forms, you can create surveys right in your web browser. Google Forms provide a fast way to create an online survey for people, with different responses collected in an online available spreadsheet.</dd>
+</dl>
+<a href="https://www.google.com/docs/about/"><button class="dugmetaApps dugmeApps"><strong>Visit Google Docs</strong></button></a>
+<a href="https://www.google.com/sheets/about/"><button class="dugmetaApps dugmeApps"><strong>Visit Google Sheets</strong></button></a>
+<a href="https://www.google.com/slides/about/"><button class="dugmetaApps dugmeApps"><strong>Visit Google Slides</strong></button></a>
+<a href="https://www.google.com/forms/about/"><button class="dugmetaApps dugmeApps"><strong>Visit Google Forms</strong></button></a>
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idSites" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google Sites</left></i></h2>
+<a href="https://support.google.com/sites">Google Sites</a> is a free service designed to establish communication between users. Users can connect to each other and also to cooperate with each other. This free service is performed in an surroundings that is specifically designed to provide users with efficient communication. Google Sites started his project in a manner similar to JotSpot and allowed him the good progress of the initiated process. JotSpot is a product name of a software company that is dedicated to small and medium-sized enterprises and this company was founded by Joe Kraus and also Graham Spencer. Each page that was created using <a href="http://download.cnet.com/Google-Page-Creator/3000-12945_4-10724942.html">Google Page Creator</a> moved on Google Sites in 2007, and Google Sites was unveiled using the JotSpot technology the following year. This service was free, but the use of the domain cost ten dollars. Finally, Google Sites became totally free without the need for domain on 21 May 2008 and it was a positive turning point for the users of these services. It is useful to say that all users who choose to use Google Sites must respect regulations that prohibits the abuse of this service. This service may be useful if the user respects the policy.</br>
+<img style="border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-top: 10px;" src="Slike sajta/Blue Site.png">
+<img style="margin-left:14px;" src="Slike sajta/Google Sites transparent.png">
+<img  style="border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-left:10px;" src="Slike sajta/Words picture.png">
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idCalendar" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google Calendar</left></i></h2>
+<img style="float:right; margin-left:26px; border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888;" src="Slike sajta/Calendar Picture.png">
+Google Calendar allows users to create and edit events. It is available as a web application and as mobile apps for the Android and also iOS mobile operating systems. Using Google Calendar, you can add many events and send invitations effortlessly, share with friends and family (or keep for yourself), and search the web looking for the events in which you will enjoy. <a href="https://chrome.google.com/webstore/detail/google-calendar-by-google/gmbgaklkmjakoegficnlkhebmhkjfich">Google Calendar</a> represents simplified the organization. Positive facts relating to Google Calendar as free use of this application, the availability of interfaces in many languages and completely supporting browsers Microsoft IE, Mozilla Firefox and Safari browser. We have to say that in all browsers must be enabled JavaScript and cookies. Google Calendar settings are organized into foursections: General settings, calendars, Setting up mobile devices and laboratory settings (labs). Google calendar is a useful application that can do a lot to facilitate the organization of daily activities.</br>
+<button id="button1" style="margin-top:6px; margin-bottom:6px; width:180px; font-weight:bold;">CLICK HERE PLEASE</button>
+<div id="poljeAnimacije"></div>
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idHangouts" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google Hangouts</left></i></h2>
+<a href="https://hangouts.google.com/?hl=en">Google Hangouts</a> is a communication platform developed by Google which includes instant messaging, video chat, SMS and VOIP features. Hangouts is synced automatically across devices, so you can start a Hangout on your computer and set it to another device. You can start a Hangout with one person or to participate in a group chat with several people. Calls on almost all the numbers in the US and Canada are free from all countries where calling is available through Hangouts. Calls to several destinations in the US and Canada will cost 1 cent (USD) per minute or the listed rate for your local currency. You can send text messages using Hangouts via Google Voice Project Fi or phone number. On Android devices, you can send text messages using Hangouts across a number of mobile operators. You can share photos and stickers in conversations. On mobile devices, you can also share your location with other people. You should know that it is necessary to have a microphone and a camera that you can use video calling in this application. Utilization of Hangouts is a good way to establish communication with people who are far away.</br>
+<div id="desniDivHangouts">
+<img style="margin-left:53px; margin-top:4px; height:230px;" src="Slike sajta/Talk Transparent.png">
+<img style="float:right; border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-top:20px; margin-right:14px;" src="Slike sajta/Google Hangouts.png">
+</div>
+<div id="leviDivHangouts">
+<div class="kontejnerPrvi">
+  <img id="slikaHangouts" src="Slike sajta/Hangouts Transparent.png">
+  <div class="efekatPrvi">
+    <div class="tekstEfekta">google</br>hangouts</div>
+  </div>
+</div></div>
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idPlus" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google+</left></i></h2>
+<img style="float:right; border:solid red; border-radius:20px; margin-left:10px; margin-right:10px; box-shadow: 10px 10px 5px #888888;" src="Slike sajta/Google Plus.png">
+<img style="float:right; margin-left:10px; margin-right:-269px; margin-top:290px;" src="Slike sajta/Plus Transparent.png">
+<p style="margin-right:300px; margin-bottom:6px;">Google+ or Google plus is a interest-based social web network owned by Google. Assessments of Google plus growth have varied widely because Google first defined the service as a social network, then later as a social layer across all of Google's services allowing them to sharing a user's identity and their interests. When we talk about the technology that used by Google+ we can say that it uses Java servlets for the server code and JavaScript for the browser-side of the UI. Google announced the <a href="https://plus.google.com/+google">Google+</a> innovative improvements: automatic hideaway and poor quality comments, zooming some photos on Google+ web network, restoring the "Events" item and machine learning which will adjust certain size of the images. In July 2014, Google plus policy was changed to allow any name to be used.</p>
+<button id="button2" style="margin-top:0px; width:160px; margin-bottom:6px; margin-left:40px; font-weight:bold;">CLICK HERE PLEASE</button></br>
+<img id="poljeAnimacije2" style="border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-left:40px;" src="Slike sajta/Plus Bigger.png">
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idVault" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Google Vault</left></i></h2>
+<div class="kontejnerDrugi">
+  <img id="slikaVault" src="Slike sajta/Vault Transparent.png">
+  <div class="efekatDrugi">
+    <div class="tekstEfekta" style="margin-top:74px;">google</br>vault</div>
+  </div></div>
+<p style="margin-right:250px;">
+<a href="https://gsuite.google.com/jamboard/">Google Vault</a> allows users to hold, search and export mail. You can export your mail using Google Drive, which means that sufficient use of the Internet and you do not need the installation of special software. Google Vault provides certain services to its customers and we will enumerate some of these services. Messages and conversations between users will be retained prior to removal from the system and it is a very useful service for users who want to bring back some of the messages. Drive-file search Search your domain's Google Drive accounts by user account, organizational unit, date, or keyword. Search results include Google file types as well as non-Google file types such as PDF, DOCX, and JPG. Audit reports use reporting services from Google Vault to show the actions to their active users, these actions emerge during a certain period.</p>
+<img style="float:left; border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; width:240px; height:200px; margin-top:-7px;" src="Slike sajta/Zastita image.png">
+<img style="border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-left:26px; height:200px; margin-top:-7px;" src="Slike sajta/Google Vault.png">
+<img style="float:right; border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; width:240px; height:200px; margin-top:-7px;" src="Slike sajta/Security.png">
+</div></div>
+
+<div>
+<div class="divoviGlavnogDela" id="idJamboard" style="margin-top:70px;">
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><left>Jamboard</left></i></h2>
+<img style="float:right; border:solid red; border-radius:20px; box-shadow: 10px 10px 5px #888888; margin-left:20px;" src="Slike sajta/Jamboard Table.png">
+Jamboard is a product made by Google, which is a digital panel that aims to quickly share ideas between team members. Utilization of Jamboard encourages progress of creativity in whole team, and therefore the number of creative ideas increases quickly in a short period of time. The result of that is an increase in productivity and efficiency in the work of the entire team. Jamboard has many advantages that are more advanced than usual old table. First of all, this digital whiteboard that we call Jamboard allows us to automatically record all our ideas that we presented at the meeting. Then, we are able to share our ideas mentioned with all the members of our team using digital properties of this digital helpful table. Jamboard is intelligently designed to speed up collaboration among your team and it consists of a built-in HD camera and speakers. Jamboard’s touchscreen was built for precision drawing and it automatically to recognize the difference between using the stylus to sketch or the eraser to start over. In 2017 you can purchase Jamboard with affordable price that is more favorable price than other touchscreen displays. This is a great advantage and a great opportunity to improve the creativity of your business.</br>
+<p style="margin-left:100px; font-weight:bold; margin-top:6px; margin-bottom:0px; text-align:justify;"><i>We have a request for you. Which institutions should use Jamboard? Please select the options that you think it might be the answer to this question.</i></p>
+<form action="https://gsuite.google.com/jamboard/" name="mojaForma" style="margin-left:100px;" onsubmit="return proveraCekiranjaDruga();">
+<table>
+<tr>
+<td style="width:210px;"><input type="checkbox" id="cek1" onclick="proveraCekiranjaPrva();"/><strong><i> small enterprises</i></strong></td>
+<td style="width:210px;"><input type="checkbox" id="cek2" onclick="proveraCekiranjaPrva();"/><strong><i> large enterprises</i></strong></td>
+<td style="width:210px;"><input type="checkbox" id="cek3" onclick="proveraCekiranjaPrva();"/><strong><i> universities</i></strong></td>
+</tr>
+<tr>
+<td style="width:210px;"><input type="checkbox" id="cek4" onclick="proveraCekiranjaPrva();"/><strong><i> private institutions</i></strong></td>
+<td style="width:210px;"><input type="checkbox" id="cek5" onclick="proveraCekiranjaPrva();"/><strong><i> public institutions</i></strong></td>
+<td style="width:210px;"><input type="checkbox" id="cekOther" onclick="otcekiranjePolja();"/><strong><i> none of these</i></strong></td>
+</tr>
+</table>
+<input type="submit" value="CLICK HERE TO VISIT JAMBOARD" style="height:40px; font-weight:bold; width:230px;"/>
+</form>
+</div></div>
+
+<div class="desniDiv">
+<img id="slikaVeca" src="Slike sajta/Internet Connection.jpg">
+</div>
+<div class="leviDiv">
+<img id="slikaManja" src="Slike sajta/Connection Internet transparent.png">
+<a href="#logoSajta"><button class="dugmeNavigacije" style="width:210px;">CLICK HERE TO BACK TO THE TOP</button></a>
+</div>
+
+<div id="slideshowKontejner">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img class="slikeSlajdera" src="Slike sajta/Chrome first.jpg">
+  <div class="text">Google Mail</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img class="slikeSlajdera" src="Slike sajta/Chrome second.jpg">
+  <div class="text">Google Drive</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img class="slikeSlajdera" src="Slike sajta/Chrome third.jpg">
+  <div class="text">Google apps for work</div>
+</div></div>
+<br>
+<div>
+  <span class="dot dotPrvo"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script type="text/javascript">
+var slideIndex=0;
+showSlides();
+function showSlides() {
+    var i;
+    var slides=document.getElementsByClassName("mySlides");
+    var dots=document.getElementsByClassName("dot");
+    for(i=0;i<slides.length; i++) {
+       slides[i].style.display="none";}
+    slideIndex++;
+    if(slideIndex>slides.length) {slideIndex=1}    
+    for(i=0; i<dots.length; i++) {
+        dots[i].className=dots[i].className.replace("active", "");}
+    slides[slideIndex-1].style.display="block";  
+    dots[slideIndex-1].className+=" active";
+    setTimeout(showSlides, 2000);
+}
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("#poljeAnimacije").animate({left: '1124px'});
+    });
+});
+$(document).ready(function(){
+    $("#button2").click(function(){
+        $("#poljeAnimacije2").slideUp(1000).slideDown(1000);
+    });
+});
+</script>
+</body>
+</html>

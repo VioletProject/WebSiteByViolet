@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prvi deo projekta Cirovic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+  font-family:Helvetica, sans-serif; font-size:18px; background-color:#CCF0F6;
+}
+.hederGlavnogMenija { 
+  width: 1270px; 
+  border: 4px solid #3F9;
+  float: none;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: -8px;
+  right: 5px;
+  left: 0px;
+  z-index: 2;
+  background-color: white;
+  background: #ED2939; /*For browsers that do not support gradients*/
+  background: -webkit-linear-gradient(#3F9, #73B1B7); /*For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(#3F9, #73B1B7); /*For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(#3F9, #73B1B7); /*For Firefox 3.6 to 15*/
+  background: linear-gradient(#3F9, #73B1B7); /*Standard syntax (must be last)*/
+}
+nav {
+  margin: 10px auto; 
+  text-align: center;
+}
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+  }
+nav ul {
+  background: #3F9 ; 
+  box-shadow: 5px 5px 9px #888;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  padding: 0px;
+  }
+nav ul li {
+  float: left;
+  }
+nav ul li:hover {
+  background: #FF6;
+  }
+nav ul li:hover a {
+  color: #000;
+  }
+nav ul li a {
+  display: block; 
+  padding: 5px;
+  width: 150px; 
+  color: #000; 
+  text-decoration: none;
+  } 
+nav ul ul {
+  background: #99FFCC; 
+  padding: 0;
+  position: absolute; 
+  top: 100%;
+  }
+nav ul ul li {
+  float: none; 
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative;
+  }
+nav ul ul li a {
+  padding: 5px;
+  width: 150px; 
+  color: #000;
+  } 
+nav ul ul li a:hover {
+  background:#CF6;
+  }  
+nav ul ul ul {
+  position: absolute; 
+  left: 100%; 
+  top: 0;
+  }
+nav ul ul ul li a {
+  padding: padding: 5px;
+  width: 150px;
+  color: #fff;
+  white-space: nowrap;
+  }
+
+#logoSajta {
+  width: 70px;
+  float: none;
+}
+.stilDivPrvi {
+	text-align: justify;
+  font-size: 21px;
+	margin-left: 70px;
+	margin-right: 70px;
+  margin-top: -50px;
+}
+#slikaDivPrvi {
+	display: block;
+  float: left;
+  margin: -10px 20px 20px 10px;
+}
+.kontejner {
+  position: relative;
+  width: 50%;
+}
+.efekatPrvi {
+  position: absolute;
+  top: -2px;
+  bottom: 0;
+  left: 0;
+  right: 20px;
+  height: 260px;
+  width: 270px;
+  opacity: 0;
+  transition: .25s ease;
+  background-color: #0080FF;
+}
+.kontejner:hover .efekatPrvi {
+  opacity: 1;
+}
+.tekstEfekta{
+	font-weight: bold;
+	font-size: 43px;
+	text-align: center;
+  margin-top: 20px;
+}
+.leviDiv {
+  float: left;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.desniDiv {
+  float: right;
+  width: 34%;
+}
+.dugmeNavigacije {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  width: 129px;
+  background-color: #0080FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 1060px;
+  margin-top: 0px;
+}
+.dugmeNavigacije:hover {
+  background-color: #FF0000;
+}
+.dugmeNavigacije:active {
+  background-color: #3F9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.dugmetaDrive {
+  background-color: red;
+  border: solid black 1px;
+  color: black;
+  padding: 15px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  margin-top: 6px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.dugmeDrive:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,1),0 17px 50px 0 rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+<div class="hederGlavnogMenija" id="okvir">
+    <img id="logoSajta" src="Slike sajta/logo.png"> 
+   <nav>
+				<ul>
+				<li><a href="index.html">First page</a></li>
+				<li><a href="#">History</a>
+					<ul>
+						<li><a href="Prvi deo projekta Cirovic.html">Announcement</a></li>
+						<li><a href="Drugi deo projekta Cirovic.html">Public release</a></li>
+						<li><a href="Treci deo projekta Cirovic.html">Development</a></li>
+						<li><a href="Cetvrti deo projekta Cirovic.html">Version history</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+						<li><a href="features_security.html">Security</a></li>
+						<li><a href="features_privacy.html">Privacy</a></li>
+						<li><a href="features_speed.html">Speed</a></li>
+						<li><a href="features_stability.html">Stability</a></li>
+						<li><a href="features_user_interface.html">User interface</a></li>
+					</ul>
+				</li>
+				<li><a href="Glavni deo projekta Cirovic.html">Google apps</a></li>
+
+				<li> <a href="download.html"> Download </a> </li> 
+				<li> <a href="kontakt.html"> Contact </a> </li>
+			</ul>
+		</nav>
+  </div>
+
+<a href="Drugi deo projekta Cirovic.html"><button class="dugmeNavigacije">NEXT</button></a>
+<div class="stilDivPrvi">
+<h1 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><center>HISTORY</center></h1>
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i><center>Announcement</center></i></h2>
+<p>
+<div class="kontejner">
+  <img id="slikaDivPrvi" src="Slike sajta/Chrome_Logo_3D.png">
+  <div class="efekatPrvi">
+    <div class="tekstEfekta">Stari <br/> logo <br/> Google <br/> Chrome</div>
+  </div>
+</div>
+Google Chrome is a web browser that was first used on 3 September 2008 and the process of the publication of Google Chrome has gone through several stages. The comic of Scott McCloud was used by bloggers to present the functionality of the primary version of Google's browser. The changes that have much effect on the development of this browser were starting to occur in that period. All of these changes have governed direction of the earlier version of Google's browser. Blogger Philipp Lenssen made a scanned copy of the 38-page comic that was available on his website after receiving it on 1 September 2008. The comic was appointed on Google Books. This new browser was allegedly named "Chrome" because Google wanted to minimize the chrome of the browser. There are a number of versions of Google Chrome browser, each of these versions was performing in accordance with the circumstances. Below, we are going to introduce to you the version of Google Chrome's used for different periods.</p>
+<a href="http://books.google.com/googlebooks/mylibrary/"><button class="dugmetaDrive dugmeDrive" style="margin-left:287px;"><strong>Visit now Google Books</strong></button></a>
+<a href="http://comicspodcasts.com/2015/05/26/comics-alternative-interviews-scott-mccloud/"><button class="dugmetaDrive dugmeDrive" style="margin-left:46px;"><strong>Comic by Scott McCloud</strong></button></a>
+<a href="http://phillipjensen.com/"><button class="dugmetaDrive dugmeDrive" style="margin-left:46px;"><strong>Blogger Philipp Lenssen</strong></button></a>
+</div>
+<div class="desniDiv">
+<img style="border-radius:53px; border-style:solid; border-color:red; box-shadow: 20px 10px 5px #888888; height:366px; margin-left:-40px; width:440px;" src="Slike sajta/Old Computer.jpg">
+</div>
+<div class="leviDiv">
+<img style="border-radius:53px; border-style:solid; border-color:red; box-shadow: 20px 10px 5px #888888; margin-left:10px; margin-bottom:10px;" src="Slike sajta/Scott McCloud.png">
+</div>
+</body>
+</html>

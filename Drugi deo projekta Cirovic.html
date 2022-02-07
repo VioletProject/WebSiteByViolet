@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Drugi deo projekta Cirovic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body {
+  font-family:Helvetica, sans-serif; font-size:18px; background-color:#CCF0F6;
+}
+.hederGlavnogMenija { 
+  width: 1270px; 
+  border: 4px solid #3F9;
+  float: none;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  top: -8px;
+  right: 5px;
+  left: 0px;
+  z-index: 2;
+  background-color: white;
+  background: #ED2939; /*For browsers that do not support gradients*/
+  background: -webkit-linear-gradient(#3F9, #73B1B7); /*For Safari 5.1 to 6.0*/
+  background: -o-linear-gradient(#3F9, #73B1B7); /*For Opera 11.1 to 12.0*/
+  background: -moz-linear-gradient(#3F9, #73B1B7); /*For Firefox 3.6 to 15*/
+  background: linear-gradient(#3F9, #73B1B7); /*Standard syntax (must be last)*/
+}
+nav {
+  margin: 10px auto; 
+  text-align: center;
+}
+nav ul ul {
+  display: none;
+}
+nav ul li:hover > ul {
+  display: block;
+  }
+nav ul {
+  background:#3F9 ; 
+  box-shadow: 5px 5px 9px #888;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  padding: 0px;
+  }
+nav ul li {
+  float: left;
+  }
+nav ul li:hover {
+  background: #FF6;
+  }
+nav ul li:hover a {
+  color: #000;
+  }
+nav ul li a {
+  display: block; 
+  padding: 5px;
+  width: 150px; 
+  color: #000; 
+  text-decoration: none;
+  } 
+nav ul ul {
+  background: #99FFCC; 
+  padding: 0;
+  position: absolute; 
+  top: 100%;
+  }
+nav ul ul li {
+  float: none; 
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative;
+  }
+nav ul ul li a {
+  padding: 5px;
+  width: 150px; 
+  color: #000;
+  } 
+nav ul ul li a:hover {
+  background:#CF6;
+  }  
+nav ul ul ul {
+  position: absolute; 
+  left: 100%; 
+  top: 0;
+  }
+nav ul ul ul li a {
+  padding: padding: 5px;
+  width: 150px;
+  color: #fff;
+  white-space: nowrap;
+  }
+
+#logoSajta {
+  width: 70px;
+  float: none;
+}
+.stilDivPrvi {
+	text-align: center;
+	font-size: 21px;
+	margin-left: 70px;
+	margin-right: 70px;
+  margin-top: -50px;
+}
+.stilSlika{
+	margin: auto;
+  width: 50%;
+}
+.leviDiv {
+  float: left;
+  width: 20%;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+.desniDiv {
+  float: right;
+  width: 70%;
+  margin-top: 15px;
+}
+.dugmeNavigacije {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  width: 129px;
+  background-color: #0080FF;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 0px;
+}
+.dugmeNavigacije:hover {
+  background-color: #FF0000;
+}
+.dugmeNavigacije:active {
+  background-color: #3F9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.dugmePrevious {
+  margin-left: 906px;
+  margin-right: 20px;
+}
+.dugmetaDrive {
+  background-color: red;
+  border: solid black 1px;
+  color: black;
+  padding: 15px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  margin-top: 6px;
+  width: 220px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.dugmeDrive:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,1),0 17px 50px 0 rgba(0,0,0,0.1);
+}
+</style>
+
+<script type="text/javascript">
+var parametarSlike='jedan';
+function promenaSlike(){
+	var promenjenaSlika=document.getElementById('slikaPrva');
+	if(parametarSlike=='jedan'){
+		promenjenaSlika.src="Slike sajta/Old and new logo.png";
+		parametarSlike='dva';}
+	else{
+		promenjenaSlika.src="Slike sajta/Google Chrome Public.jpg";
+		parametarSlike='jedan';}
+}
+setInterval('promenaSlike()', 2000);
+</script>
+</head>
+
+<body>
+<div class="hederGlavnogMenija" id="okvir">
+	<img id="logoSajta" src="Slike sajta/logo.png"> 
+	<nav>
+				<ul>
+				<li><a href="index.html">First page</a></li>
+				<li><a href="#">History</a>
+					<ul>
+						<li><a href="Prvi deo projekta Cirovic.html">Announcement</a></li>
+						<li><a href="Drugi deo projekta Cirovic.html">Public release</a></li>
+						<li><a href="Treci deo projekta Cirovic.html">Development</a></li>
+						<li><a href="Cetvrti deo projekta Cirovic.html">Version history</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+						<li><a href="features_security.html">Security</a></li>
+						<li><a href="features_privacy.html">Privacy</a></li>
+						<li><a href="features_speed.html">Speed</a></li>
+						<li><a href="features_stability.html">Stability</a></li>
+						<li><a href="features_user_interface.html">User interface</a></li>
+					</ul>
+				</li>
+				<li><a href="Glavni deo projekta Cirovic.html">Google apps</a></li>
+
+				<li> <a href="download.html"> Download </a> </li> 
+				<li> <a href="kontakt.html"> Contact </a> </li>
+			</ul>
+		</nav>
+</div>
+
+<a href="Prvi deo projekta Cirovic.html"><button class="dugmeNavigacije dugmePrevious">PREVIOUS</button></a>
+<a href="Treci deo projekta Cirovic.html"><button class="dugmeNavigacije">NEXT</button></a>
+<div class="stilDivPrvi">
+<h1 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">HISTORY</h1>
+<h2 style="color:red; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;"><i>Public release</i></h2>
+<p>
+The browser was primarily designed for Windows XP system. Thereafter, a couple of days from the first publication was officially included 43 languages, which means that people of different nationalities could use this browser that was newly established.
+</p>
+<p>
+CNET noted that they have to respect certain rules when it comes to facilities that are posted on Google's browser. Google responded to this criticism by stating that this responsibility rests with other products. Thereafter, the passage was removed from the <a href="https://www.google.com/chrome/browser/privacy/eula_text.html">Terms of Service</a> and that was the way for Google to enclose from all criticism.
+</p>
+<p>
+Google Chrome has quickly won over one percent of the total share. After a certain period, this share has considerably decreased and it has been a positive transition. Finally in October 2008, this share again increased amounting to one percent.
+</p>
+<p>
+CNET announced that Google wants to release versions of Chrome for OS X and Linux in 2009. The first official Chrome OS X and <a href="https://www.linux.com/">Linux developer</a> previews were announced on June 4 same year. Many functions have been removed, and people have begun to use feedback instead of these functions. It was truly big modification for Chrome.
+</p>
+<p>
+In 2009, Google released beta versions of Chrome for OS X and Linux. The edition of browser has been announced for 2010 is supported all three platforms that were mentioned above. In 2010, Google Chrome was one of the twelve browsers offered to <a href="http://www.efta.int/eea">European Economic Area</a> users of Microsoft Windows. It was a major breakthrough for the official Google's browser.
+</p>
+<p>
+Chromium OS is the open-source development version of Chrome OS. Chromium OS is based on the Linux kernel and uses Google's Chromium browser as its principal user interface. As a result, Chromium OS primarily supports web applications. Chromium OS was first made available in compiled form by hobbyists. More organized efforts have emerged over time, including a few manufacturers that have shipped devices with the operating system pre-installed.
+</p>
+<p>
+There are websites where you can download the beta version of Chrome and you can also download Chrome for Windows 32-bit, Windows 64-bit, Linux or iOS. When you install the selected version, you can try out the newest tools while they're a little rough around the edges. Also, you can see the opportunities that is provided by these versions.
+</p>
+</div>
+
+<div class="desniDiv">
+<div class="stilSlika">
+<img style="border-radius:16px; border-style:solid; border-color:red; box-shadow: 20px 10px 5px #888888; margin-bottom:30px; height:300px; width:632px; margin-left:-70px;" src="Slike sajta/Google Chrome Public.jpg" id="slikaPrva" onclick="promenaSlike();"/>
+</div>
+</div>
+<div class="leviDiv">
+<a href="https://www.cnet.com/"><button class="dugmetaDrive dugmeDrive" style="margin-left:100px;"><strong>Visit now CNET news</strong></button>
+<a href="http://www.chromium.org/chromium-os"><button class="dugmetaDrive dugmeDrive" style="margin-left:100px; margin-top:22px;"><strong>Visit now Chronium OS</strong></button></a>
+<a href="https://www.google.com/chrome/browser/beta.html?platform=mac"><button class="dugmetaDrive dugmeDrive" style="margin-left:100px; margin-top:22px;"><strong>Download Chrome Beta</strong></button></a>
+</div>
+</body>
+</html>

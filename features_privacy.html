@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="refresh" content="30"> -->
+	<title>Privacy</title>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script type="text/javascript" src="./js/jquery-git.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</head>
+<body>
+	<header id="okvir">
+		<img id="logo" src="logo.png" alt="Google_Chrome_logo"> 
+		<nav>
+				<ul>
+				<li><a href="index.html">First page</a></li>
+				<li><a href="#">History</a>
+					<ul>
+						<li><a href="Prvi deo projekta Cirovic.html">Announcement</a></li>
+						<li><a href="Drugi deo projekta Cirovic.html">Public release</a></li>
+						<li><a href="Treci deo projekta Cirovic.html">Development</a></li>
+						<li><a href="Cetvrti deo projekta Cirovic.html">Version history</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+						<li><a href="features_security.html">Security</a></li>
+						<li><a href="features_privacy.html">Privacy</a></li>
+						<li><a href="features_speed.html">Speed</a></li>
+						<li><a href="features_stability.html">Stability</a></li>
+						<li><a href="features_user_interface.html">User interface</a></li>
+					</ul>
+				</li>
+				<li><a href="Glavni deo projekta Cirovic.html">Google apps</a></li>
+
+				<li> <a href="download.html"> Download </a> </li> 
+				<li> <a href="kontakt.html"> Contact </a> </li>
+			</ul>
+		</nav>
+	</header>
+	<a href="features_security.html"><button class="dugmeNavigacije dugmePrevious">PREVIOUS</button></a>
+	<a href="features_speed.html"><button class="dugmeNavigacijeNext">NEXT</button></a>
+	<main>
+		<aside class="okvir1">
+			
+			<nav id="meni1">
+				<ul id="meni1_1">
+					<li class="stavka1" id="prva_stavka"><a href="#okvir"><span>Privacy</span></a></li>
+					<li class="stavka1 manji_font" id="druga_stavka"><a href="#incognito_mode">Incognito mode</a></li>
+					<li class="stavka1 manji_font"><a href="#user_tracking">User tracking</a></li>
+					<li class="stavka1 manji_font" id="poslednja_stavka"><a href="#do_not_track">Do Not Track</a></li>
+				</ul>
+			</nav>
+			
+		</aside>
+		<section>
+			<article>
+				<h2>Privacy</h2>
+				<div id="incognito_box">
+					<div class="eyes" id="left_eye"></div>
+					<div class="eyes" id="right_eye"></div>
+					<img id="incognito_mode_logo" src="./slike/incognito_mode_logo.png">
+				</div>
+				</article>
+				<article id="incognito_mode">
+					<h3>Incognito mode</h3>
+					<img id="incognito_m" src="./slike/Incognito_mode.png">
+					<div class="tekst">
+						<p>Incognito mode is a private browsing feature that prevents the browser from permanetly storing any history inforamtion or cookies from the websites visited. He is similar to the private browsing feature in other web browsers. It doesn't prevent saving in all windows, only when you are using incognito window, wich means that you are in incognito mode when you are using incognito window. Private browsing is not meant to be completely anonymous on the Internet. As mentioned earlier, it is an easy and quick way to not log your browsing history or save (cache) any web pages, images, or cookies as you are browsing.</p>
+						</div>
+					</article>
+					<article id="user_tracking">
+						<h3>User tracking</h3>
+						<div class="tekst">
+							<p>Chrome sends details about its users to Google through both optional and non - optional user tracking mechanisms, and some of them can be otionally enabled and disabled through the installation interface and through the browser's options dialog.</p>
+							<p>When you search on Google from the Google Chrome address bar, an "RLZ parameter" is included in the URL. It is also sent separately on days when Google Chrome has been used or when certain significant events occur such as successful installation of Google Chrome. This parameter does not uniquely identify you, nor is it used to target advertising. It is used to understand the effectiveness of different distribution mechanisms, such as downloads directly from Google vs other distribution channels.</p>
+							<p>In March 2010, Google devised a new method to collect installation statistics. The unique ID token included with Chrome is now only used for the first connection that Google Update makes to its server.</p>
+							<p>The optional suggestion service included in Google Chrome provides the information typed into Omnibox to the search provider before the user even hits return, and is therefor criticized. This allows the search engine not only to provide URL suggestions, but also provides them with web usage information tied to an IP address.</p>
+							</div>
+						<table>
+							<tr>
+								<th>Method</th>
+								<th>Information sent</th>
+								<th>When</th>
+								<th>Optional</th>
+							</tr>
+							<tr id="red_row">
+								<td><b>Installation</b></td>
+								<td class="text_on_left">Randomly generated token included in installer which is used to measure success rate of Google Chrome.</td>
+								<td>On installation</td>
+								<td>NO</td>
+							</tr>
+							<tr class="yellow_row">
+								<td><b>RLZ identifier</b></td>
+								<td class="text_on_left">Encoded string contains non-indetifying information about where Chrome was downloaded from and when installed, and is used to measure promotional campaigns. Google provides the source code to decode this string. <br>RLZ can be disabled in the Chrome Operating System. But for all other operating systems, when it comes to desktops can be avoid by downloading the browser directly from Google.com/chrome, but it can't be disabled on phones, tablets and possibly laptops.</td>
+								<td class="text_on_left">On Google search query <br> On first launch and first use of address bar</td>
+								<td>PARTIAL</td>
+							</tr>
+							<tr class="green_row">
+								<td><b>clientID</b></td>
+								<td class="text_on_left">Unique identifier along with user preferences, logs of usage metrics and crashes.</td>
+								<td>Unknown</td>
+								<td>YES <br> default enabled</td>
+							</tr>
+							<tr class="green_row">
+								<td><b>Omnibox predictions</b></td>
+								<td class="text_on_left">Text typed into the address bar.</td>
+								<td>While typing</td>
+								<td>YES <br> default enabled</td>
+							</tr>
+							<tr class="green_row">
+								<td><b>Page not found</b></td>
+								<td class="text_on_left">Text typed into the address bar.</td>
+								<td class="text_on_left">Upon receiving "Srever not found" response</td>
+								<td>YES <br> default enabled</td>
+							</tr>
+							<tr class="yellow_row">
+								<td><b>Google Update (Windows) <br> & <br> Google Software Update (OS X)</b></td>
+								<td class="text_on_left">Information about how often Chrome is used, details about the OS and Chrome version.</td>
+								<td>Periodically</td>
+								<td>PARTIAL</td>
+							</tr>
+						</table>
+						</article>
+						<article id="do_not_track">
+							<h3>Do Not Track</h3>
+							<div id="do_not_t_okvir">
+								<div id="red_square"></div>
+								<img id="do_not_t" src="./slike/Do_Not_Track.png">
+							</div>
+							<div class="tekst">
+								<p>In February 2012, Google announced that Chrome would support Do Not Track (DNT) by the end of 2012. When Google released Chrome 23, Chrome users are finally allowed to request that websites disable user tracking.</p>
+								</div>
+							</article>
+						</section>
+					</main>
+					<footer>
+						<p> neki tekst </p>
+					</footer>
+				</body>
+				</html>

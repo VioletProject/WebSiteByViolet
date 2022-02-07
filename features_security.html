@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Security</title>
+	<!-- <meta http-equiv="refresh" content="10"> -->
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script src="js/jquery-git.min.js"></script>
+	<script type="text/javascript" src="js/animation.js"></script>
+	<script type="text/javascript" src="./js/scritp.js"></script>
+	<script type="text/javascript" src="./js/slideshow0.js"></script>
+</head>
+<body>
+	<header id="okvir">
+		<img id="logo" src="logo.png" alt="Google_Chrome_logo"> 
+		<nav>
+				<ul>
+				<li><a href="index.html">First page</a></li>
+				<li><a href="#">History</a>
+					<ul>
+						<li><a href="Prvi deo projekta Cirovic.html">Announcement</a></li>
+						<li><a href="Drugi deo projekta Cirovic.html">Public release</a></li>
+						<li><a href="Treci deo projekta Cirovic.html">Development</a></li>
+						<li><a href="Cetvrti deo projekta Cirovic.html">Version history</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Features</a>
+					<ul>
+						<li><a href="features_security.html">Security</a></li>
+						<li><a href="features_privacy.html">Privacy</a></li>
+						<li><a href="features_speed.html">Speed</a></li>
+						<li><a href="features_stability.html">Stability</a></li>
+						<li><a href="features_user_interface.html">User interface</a></li>
+					</ul>
+				</li>
+				<li><a href="Glavni deo projekta Cirovic.html">Google apps</a></li>
+
+				<li> <a href="download.html"> Download </a> </li> 
+				<li> <a href="kontakt.html"> Contact </a> </li>
+			</ul>
+		</nav>
+	</header>
+	<a href="features_privacy.html"><button class="dugmeNavigacije">NEXT</button></a>
+	<main>
+		<aside class="okvir1">
+
+			<nav id="meni1">
+				<ul id="meni1_1">
+					<li class="stavka1" id="prva_stavka"><a href="#okvir"><span>Security</span></a></li>
+					<li class="stavka1 manji_font" id="druga_stavka"><a href="#security_vulnerabilities">Security vulnerabilities</a></li>
+					<li class="stavka1 manji_font"><a href="#malware_blocking">Malware blocking</a></li>
+					<li class="stavka1 manji_font" id="poslednja_stavka"><a href="#plugins">Plugins</a></li>
+				</ul>
+			</nav>
+
+		</aside>
+		<section class="nextSecurity">
+			<article>
+				<h2 id="glavni_naslov">Security</h2>
+				<div id="krug"></div>
+				<div id="krug1"></div>
+				<img id="okrugla_slika" src="./slike/Chrome_Web_Browser_1.png">
+				<img class="chrome_web_browser" src="./slike/Chrome_Web_Browser.png">
+				<div class="tekst">
+					<p>Chrome periodically takes updates of two blacklist, and that is one for phishing and one for malware, and warns users when they attempt to visit a site flagged as potentially harmfull.</p>
+					<p>Chrome uses a process - allocation model to sandbox tabs. Sandbox is a security mechanism for separating running programs. Using the principle of least privilege, each tab process cannot interact whit critical memory functions or other tab processes. The Sandbox Team is said to have "taken this existing process boundary and made it into a jail". This enforces a computer security model whereby there are two levels of multilevel security (user and sandbox). The sandbox can only respond to communiction requests initiated by the user. On Linux sandboxing uses the seccomp mode (short for secure computing mode) which is a computer security facility in the Linux kernel.</p>
+					<p>Since 2008, Chrome has been faulted for not including a master password to prevent casual access to a user's passwords, and their developers said that a master password does not provide real security agaist hackers and they refused to implement one. In February 2014, the Windows version was set to ask user to enter the Windows account pasword before showing saved passowrds.</p>
+					<p>In January 2015, TorrentFreak reported that using Chrome when connected to the internet using a VPN can be a serious security issue due to the browser's support for WebRTC (Web Real - Time Communication).</p>
+					<p>On September 12, 2016, it was decided that starting with Chrome 56, users will be warned when they visit non - secure HTTP websites to encourage more sites to make the transition to HTTPS.</p>
+					</div>
+				</article>
+
+				<article id="security_vulnerabilities">
+					<h3>Security vulnerabilities</h3>
+					<div id="slajd0">
+						<img id="slideshow0_img" name="slide" src="./slike/hacked1.jpg"/>
+					</div>	
+					
+					<div class="tekst">
+						<p>A substantial number of security vulnerabilities in Chrome occure in the Adobe Flash Player. For example, in the 2016 Pwn2Own successful attack on Chrome relied on four security vulnerabilities, wherein the two were in Flash, one was in Chrome and one was in the Windows kernel. In 2016, Google announced that, starting in version 53, plans to phase out Flash Player in Chrome. The first phase is to disable Flash for ads and "background analytics", with the ultimate aim of disabling it completely by the end of the year, except on sites that Google thinks that will not work without it, and then it would be re - enabled with the exception of ads and background analytics on a site - by - site basis.</p>
+						</div>
+					</article>
+					<article id="malware_blocking">
+						<h3>Malware blocking</h3>
+						
+						<div class="tekst">
+							<p>Chrome is designed to keep users safer and more secure on the web with built - in malware and phishing protection, auto - updates to make sure that users have all the latest fixes, and more.</p>
+							<p>Before you visit a site that is suspected of containing malware or phishing, Chrome will show you a warning message.</p>
+							</div>
+							<img id="chrome_bitly_malware" src="./slike/chrome_bitly_malware.jpg">
+							<div class="tekst">
+							<p>If you encounter a website suspected of containing phishing or malware, with Safe Browsing technology enabled in Chrome, you will see a warning page like the one shown above.</p>
+							<p>A phishing attack takes place when someone represents as someon else to trick you, in order to obtain your confidental information, and this is usually achieved through a fake website. On the other hand, malware is software installed on your machine often without your knowledge, and is designed to harm your computer or potentially steal information from your computer. Sandboxing helps prevent malware from installing itself on your computer, and also adds an aditional layer of protection against malicous web pages. Chrome checks regulary your security update, to make sure that it's always kept up - to - date.</p>
+							</div> 
+						</article>
+						<article id="plugins">
+							<h3>Plugins</h3>
+							<div class="tekst">
+								<p>Up to version 45, Chrome supported plug - ins with Netscape Plugin Application Programming Interface (NPAPI), so that plug - ins, such as Adobe Flash Player, run as unrestricted separate processes outside the browser and can not be sandboxed as tabs are. NPAPI is an application programming interface (API) that alllows plug - ins (browser extensions) to be developed for web browsers. Since 2010, Adobe Flash has been integral to Chrome and does not need be installed separately, and is also kept up to date as part of Chrome's own updates. On August 12, 2009, Google replaced NPAPI with PPAPI (Pepper Plugin API), which is more portable and more secure. On April 14, 2015, Google released Chrome v42, and in that version NPAPI was disabled by default. And in version 45, that was released in September 2015, suport for NPAPI was entirely removed. Now, by default, Chrome asks if you want to run Adobe Flash when you visit a page that has it, which means that you have the opportunity to choose whether you want to use it or not. If you are using a mobile device, Flash won't work on Chrome.</p>
+								<p></p>
+								</div>
+							<div id="flash_centriranje">
+								<img src="./slike/No_more_flash.gif">
+								<img id="adobe_flash_player" src="./slike/Adobe_Flash_Player.png">
+								<img id="no_flash" src="./slike/no_flash.png">
+							</div>
+							</article>
+						</section>
+					</main>
+					<footer class="container-fluid">
+						<p> neki tekst </p>
+					</footer>
+
+				</body>
+				</html>
